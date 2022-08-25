@@ -1,0 +1,151 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+:root {
+  --Softblue: hsl(215, 51%, 70%);
+  --Cyan: hsl(178, 100%, 50%);
+
+  --VerydarkbluemainBG: hsl(217, 54%, 11%);
+  --VerydarkbluecardBG: hsl(216, 50%, 16%);
+  --Verydarkblueline: hsl(215, 32%, 27%);
+  --White: hsl(0, 0%, 100%);
+}
+
+h2,
+p {
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--VerydarkbluemainBG);
+  font-family: 'Outfit';
+  color: var(--Softblue);
+}
+
+.card {
+  max-width: 350px;
+  background-color: var(--VerydarkbluecardBG);
+  border-radius: 15px;
+  height: 596px;
+  position: relative;
+}
+
+.image {
+  width: 302px;
+  height: 302px;
+  background-image: url(./images/image-equilibrium.jpg);
+  background-position: center;
+  background-size: contain;
+  border-radius: 8px;
+  margin: 25px auto 0;
+}
+
+.wrapper {
+  padding: 0 24px;
+}
+
+h2 {
+  font-size: 1.375rem;
+  color: var(--White);
+  margin-top: 24px;
+}
+
+p {
+  font-size: 1.125rem;
+  font-weight: 300;
+  margin-top: 16px;
+}
+
+.status {
+  display: flex;
+  margin-top: 22px;
+  justify-content: space-between;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+}
+
+.price p {
+  margin-top: -3px;
+  font-weight: 600;
+  font-size: 1rem;
+  color: var(--Cyan);
+  margin-left: 5px;
+}
+
+.time {
+  display: flex;
+  align-items: center;
+}
+
+.time p {
+  margin-top: -4px;
+  margin-left: 5px;
+}
+
+hr {
+  height: 1px;
+  background-color: var(--Verydarkblueline);
+  border: none;
+  margin-top: 24px;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  margin-top: 16px;
+  font-size: 0.9rem;
+}
+
+.author span {
+  color: var(--White);
+}
+
+.author .avatar img {
+  width: 33px;
+  height: 33px;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+
+.author h3 {
+  margin: 0;
+  font-weight: 300;
+  margin-left: 16px;
+}
+
+.hover {
+  display: flex;
+  position: absolute;
+  width: 302px;
+  height: 302px;
+  background-color: var(--Cyan);
+  opacity: 0;
+  border-radius: 8px;
+  top: 25px;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.hover:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+h2:hover,
+span:hover {
+  color: var(--Cyan);
+  cursor: pointer;
+}
